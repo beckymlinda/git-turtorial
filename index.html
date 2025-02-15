@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="StyleSheet" type="text/css" href="style.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>GIT CLASS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Basics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Welcome to Git Basics</h1>
+        <p>This page covers fundamental Git commands.</p>
+        
+        <pre>
+# Initialize a Git repository
+git init
 
-<h1>GIT BASIC LESSONS</h1>
+# Check repository status
+git status
 
-<p>In a word full of possibilities , all you need is to believe"
+# Add files to staging area
+git add .
 
-<b> while at it , be realistic</b></p>
+# Commit changes
+git commit -m "Initial commit"
 
+# Connect to GitHub repository
+git remote add origin https://github.com/your-username/repository-name.git
+
+# Push to GitHub
+git push -u origin main
+        </pre>
+
+        <a href="branching.html" class="btn">Learn About Cloning & Branching →</a>
+        <a href="cheat-sheet.html" class="btn">Git Cheat Sheet 📜</a>
+        <a href="practice.html" class="btn">📝 Try Git Practice Exercises →</a>
+    </div>
 </body>
 </html>

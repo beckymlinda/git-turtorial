@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Git Cheat Sheet 📜</h1>
+        <p>Quick reference for essential Git commands.</p>
+
+        <h2>📌 Repository Setup</h2>
+        <pre>
+# Initialize a Git repository
+git init
+
+# Clone an existing repository
+git clone https://github.com/user/repository.git
+        </pre>
+
+        <h2>📂 Working with Files</h2>
+        <pre>
+# Check status of changes
+git status
+
+# Add all files to staging
+git add .
+
+# Commit changes
+git commit -m "Your message here"
+
+# Remove a file from Git tracking
+git rm --cached filename.txt
+        </pre>
+
+        <h2>🌿 Branching</h2>
+        <pre>
+# List all branches
+git branch
+
+# Create a new branch
+git branch new-feature
+
+# Switch to a branch
+git checkout new-feature
+
+# Merge branches
+git checkout main
+git merge new-feature
+        </pre>
+
+        <h2>🚀 Pushing & Pulling</h2>
+        <pre>
+# Push local changes to GitHub
+git push origin branch-name
+
+# Pull latest changes from GitHub
+git pull origin main
+        </pre>
+
+        <h2>⚠️ Undoing Changes</h2>
+        <pre>
+# Undo last commit (keep changes)
+git reset --soft HEAD~1
+
+# Undo last commit (discard changes)
+git reset --hard HEAD~1
+
+# Restore deleted file
+git checkout -- filename.txt
+        </pre>
+
+        <h2>🔄 Stashing Changes</h2>
+        <pre>
+# Save changes temporarily
+git stash
+
+# Apply stashed changes
+git stash apply
+
+# Show stash list
+git stash list
+
+# Remove stash
+git stash drop
+        </pre>
+
+        <a href="index.html" class="btn">← Back to Basics</a>
+    </div>
+</body>
+</html>

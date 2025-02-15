@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Git Practice 🚀</h1>
+        <p>Test your Git knowledge by choosing the correct commands!</p>
+
+        <div class="quiz">
+            <h2>1. How do you create a new Git repository?</h2>
+            <button class="option" onclick="checkAnswer(this, 'correct')">git init</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git start</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git create</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git open</button>
+        </div>
+
+        <div class="quiz">
+            <h2>2. What command stages all files for commit?</h2>
+            <button class="option" onclick="checkAnswer(this, 'correct')">git add .</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git stage all</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git commit all</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git push .</button>
+        </div>
+
+        <div class="quiz">
+            <h2>3. How do you switch to a branch named "feature-branch"?</h2>
+            <button class="option" onclick="checkAnswer(this, 'correct')">git checkout feature-branch</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git switch feature-branch</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git move feature-branch</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git change feature-branch</button>
+        </div>
+
+        <div class="quiz">
+            <h2>4. How do you merge a branch called "feature-branch" into "main"?</h2>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git join feature-branch</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git merge into feature-branch</button>
+            <button class="option" onclick="checkAnswer(this, 'correct')">git merge feature-branch</button>
+            <button class="option" onclick="checkAnswer(this, 'wrong')">git push feature-branch main</button>
+        </div>
+
+        <a href="index.html" class="btn">← Back to Basics</a>
+    </div>
+</body>
+</html>

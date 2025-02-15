@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Merge Conflicts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Git Merge Conflicts</h1>
+        <p>Sometimes, Git cannot automatically merge changes. This results in a merge conflict.</p>
+
+        <h2>🔍 What Causes Merge Conflicts?</h2>
+        <ul>
+            <li>Two branches modify the same line of code.</li>
+            <li>A file is deleted in one branch but modified in another.</li>
+            <li>Changes are not based on the latest `main` branch.</li>
+        </ul>
+
+        <h2>⚡ How to Fix Merge Conflicts</h2>
+        <pre>
+# Step 1: Try to merge a branch
+git merge new-feature
+
+# If there is a conflict, Git will show an error
+# Step 2: Open the conflicted file and look for conflict markers
+        </pre>
+
+        <h2>🛠 Example of a Conflict</h2>
+        <pre>
+<<<<<<< main
+This is the original code.
+=======
+This is the conflicting change from the new-feature branch.
+>>>>>>> new-feature
+        </pre>
+
+        <h2>✅ Resolving the Conflict</h2>
+        <p>Manually edit the file to keep the correct version, then save it.</p>
+
+        <pre>
+# Step 3: Add the resolved file
+git add conflicted-file.txt
+
+# Step 4: Complete the merge
+git commit -m "Resolved merge conflict"
+
+# Step 5: Push the changes
+git push origin main
+        </pre>
+
+        <h2>🚀 Best Practices to Avoid Conflicts</h2>
+        <ul>
+            <li>Always pull the latest changes before starting work: <code>git pull origin main</code></li>
+            <li>Communicate with your team to avoid working on the same file.</li>
+            <li>Use feature branches to isolate changes.</li>
+        </ul>
+
+        <a href="branching.html" class="btn">← Back to Branching</a>
+        <a href="index.html" class="btn">← Back to Basics</a>
+    </div>
+</body>
+</html>

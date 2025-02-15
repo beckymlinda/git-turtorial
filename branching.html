@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cloning & Branching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Git Cloning & Branching</h1>
+        <p>This page explains how to clone repositories and work with branches.</p>
+
+        <h2>📌 Cloning a Repository</h2>
+        <pre>
+# Clone an existing repository
+git clone https://github.com/your-username/repository-name.git
+
+# Move into the project folder
+cd repository-name
+        </pre>
+
+        <h2>🌿 Creating & Switching Branches</h2>
+        <pre>
+# Create a new branch
+git branch new-feature
+
+# Switch to the new branch
+git checkout new-feature
+
+# Create and switch in one command
+git checkout -b new-feature
+        </pre>
+
+        <h2>🔄 Merging Branches</h2>
+        <pre>
+# Switch back to main branch
+git checkout main
+
+# Merge changes from new-feature branch
+git merge new-feature
+
+# Push changes to GitHub
+git push origin main
+        </pre>
+
+        <h2>🔥 Deleting a Branch</h2>
+        <pre>
+# Delete branch locally
+git branch -d new-feature
+
+# Delete branch from GitHub
+git push origin --delete new-feature
+        </pre>
+
+        <a href="index.html" class="btn">← Back to Basics</a>
+    </div>
+</body>
+</html>
